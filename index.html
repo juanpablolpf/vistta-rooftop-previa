@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vistta Rooftop | Cocó, Fortaleza</title>
+<meta name="description" content="Vistta Rooftop: o primeiro restaurante skyline de Fortaleza, com vista de 360 graus, cozinha asiática contemporânea e música ao vivo. Av. Santos Dumont, 6740, Cocó.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Mulish:wght@400;500;700&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #0E1522; --ground-2: #16203A; --ink: #EEF0F5; --muted: #A5AFC4; --line: #25314D;
+    --gold: #E7B869; --gold-ink: #1A1206; --dusk: #F08A6B;
+    --display: "Tenor Sans", "Futura", "Segoe UI", sans-serif; --body: "Mulish", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { background: var(--ground); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.65; }
+  a { color: inherit; } img { max-width: 100%; display: block; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.1; letter-spacing: .02em; text-wrap: balance; }
+  .wrap { max-width: 1160px; margin-inline: auto; padding-inline: 24px; }
+  .preview-bar { background: var(--gold); color: var(--gold-ink); text-align: center; font-size: .88rem; padding: 8px 16px; line-height: 1.4; }
+  .top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--ground) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+  .logo { font-family: var(--display); font-size: 1.4rem; letter-spacing: .3em; text-decoration: none; }
+  .top nav { display: flex; align-items: center; gap: 24px; }
+  .top nav a { text-decoration: none; color: var(--muted); font-size: .98rem; }
+  .top nav a:hover { color: var(--ink); }
+  .btn { display: inline-block; text-decoration: none; font-weight: 700; font-size: 1rem; padding: 12px 24px; border-radius: 999px; background: var(--gold); color: var(--gold-ink); border: 1px solid var(--gold); }
+  .btn:hover { filter: brightness(1.07); }
+  .btn-line { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn-line:hover { border-color: var(--gold); filter: none; }
+  .top nav .btn { color: var(--gold-ink); padding: 8px 18px; font-size: .95rem; }
+  .menu-toggle { display: none; background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 7px 16px; font: inherit; font-size: .95rem; cursor: pointer; }
+  @media (max-width: 760px) {
+    .menu-toggle { display: inline-block; }
+    .top nav { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--ground); border-bottom: 1px solid var(--line); padding: 8px 24px 20px; }
+    .top nav a { padding-block: 12px; border-bottom: 1px solid var(--line); font-size: 1.05rem; }
+    .top nav .btn { margin-top: 16px; text-align: center; border-bottom: 1px solid var(--gold); padding: 12px; }
+  }
+  .hero { position: relative; overflow: hidden; }
+  .hero .bg { position: absolute; inset: 0; background: url("fotos/skyline.jpg") center / cover no-repeat; opacity: .5; }
+  .hero .bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,21,34,.3) 0%, var(--ground) 95%); }
+  .hero .wrap { position: relative; padding-block: 120px 96px; }
+  .alt { color: var(--gold); letter-spacing: .04em; font-size: 1rem; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); max-width: 13em; margin-bottom: 22px; }
+  .hero .lede { color: var(--muted); font-size: 1.18rem; max-width: 32em; margin-bottom: 30px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  section.block { padding-block: 88px; border-top: 1px solid var(--line); }
+  .block h2.title { font-size: clamp(2.2rem, 4.6vw, 3.3rem); margin-bottom: 14px; }
+  .block .intro { color: var(--muted); max-width: 38em; margin-bottom: 36px; }
+  .photos { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .photos img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 16px; }
+  .credit { margin-top: 14px; font-size: .85rem; color: var(--muted); }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+  .tabs button { font: inherit; font-size: .98rem; cursor: pointer; padding: 9px 18px; border-radius: 999px; background: transparent; color: var(--muted); border: 1px solid var(--line); }
+  .tabs button[aria-selected="true"] { background: var(--gold); color: var(--gold-ink); border-color: var(--gold); }
+  .dishes { list-style: none; display: grid; grid-template-columns: 1fr; gap: 0 48px; }
+  @media (min-width: 820px) { .dishes { grid-template-columns: 1fr 1fr; } }
+  .dishes li { padding-block: 18px; border-bottom: 1px solid var(--line); }
+  .dishes h3 { font-size: 1.3rem; margin-bottom: 4px; }
+  .dishes p { color: var(--muted); max-width: 32em; }
+  .menu-cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .exp { list-style: none; display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 820px) { .exp { grid-template-columns: repeat(3, 1fr); } }
+  .exp li { background: var(--ground-2); border-radius: 18px; padding: 26px; }
+  .exp h3 { font-size: 1.5rem; margin-bottom: 8px; color: var(--gold); }
+  .exp p { color: var(--muted); }
+  .visit { display: grid; grid-template-columns: 1fr; gap: 40px; }
+  @media (min-width: 900px) { .visit { grid-template-columns: 1fr 1fr; gap: 64px; } }
+  .address { font-family: var(--display); font-size: clamp(1.6rem, 3.3vw, 2.3rem); line-height: 1.2; margin-bottom: 14px; }
+  .phone { color: var(--muted); margin-bottom: 22px; }
+  .phone a { color: var(--gold); font-weight: 700; text-underline-offset: 4px; }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours caption { text-align: left; color: var(--gold); letter-spacing: .1em; margin-bottom: 6px; }
+  .hours th, .hours td { text-align: left; padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
+  .hours th { color: var(--muted); padding-right: 16px; white-space: nowrap; }
+  .hours tr.today th, .hours tr.today td { color: var(--gold); font-weight: 700; }
+  .status { margin-top: 14px; color: var(--muted); } .status b { color: var(--ink); }
+  .map { margin-top: 44px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+  .map iframe { display: block; width: 100%; height: clamp(280px, 45vw, 420px); border: 0; filter: grayscale(.3); }
+  footer { border-top: 1px solid var(--line); padding-block: 28px 40px; color: var(--muted); font-size: .92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  @media (max-width: 480px) { .wrap { padding-inline: 16px; } .hero .wrap { padding-block: 80px 64px; } .actions .btn { flex: 1 1 auto; text-align: center; } .photos { gap: 8px; } }
+</style>
+</head>
+<body>
+  <div class="preview-bar">Proposta de site para o Vistta Rooftop, criada por Juan Filho. Aguardando aprovação.</div>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#inicio">VISTTA</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Seções">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#experiencias">Experiências</a>
+        <a href="#visite">Visite</a>
+        <a class="btn" href="https://www.meufluux.com.br/visttarooftop/reservas" target="_blank" rel="noopener">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="bg" role="img" aria-label="Vista noturna dos prédios de Fortaleza a partir do rooftop"></div>
+      <div class="wrap">
+        <p class="alt">No topo do Merit Offices &amp; Mall</p>
+        <h1>Fortaleza inteira, em 360 graus, na sua mesa.</h1>
+        <p class="lede">O primeiro restaurante skyline da cidade, com cozinha asiática contemporânea, drinks autorais e música ao vivo.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.meufluux.com.br/visttarooftop/reservas" target="_blank" rel="noopener">Reservar uma mesa</a>
+          <a class="btn btn-line" href="#cardapio">Ver o cardápio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-label="Fotos do Vistta">
+      <div class="wrap">
+        <ul class="photos">
+          <li><img src="fotos/risoto.jpg" alt="Prato de arroz com frutos do mar e ervas" width="480" height="640" loading="lazy"></li>
+          <li><img src="fotos/camarao.jpg" alt="Camarões empanados com limão" width="524" height="640" loading="lazy"></li>
+          <li><img src="fotos/peixe.jpg" alt="Peixe servido em prato azul decorado" width="482" height="640" loading="lazy"></li>
+        </ul>
+        <p class="credit">Fotos: <a href="https://www.instagram.com/visttarooftop/" target="_blank" rel="noopener">@visttarooftop</a></p>
+      </div>
+    </section>
+
+    <section id="cardapio" class="block">
+      <div class="wrap">
+        <h2 class="title">Cardápio</h2>
+        <p class="intro">Uma leitura contemporânea da cozinha asiática, pensada para dividir. Uma seleção:</p>
+        <div class="tabs" role="tablist" aria-label="Partes do cardápio">
+          <button role="tab" id="t1" aria-controls="c1" aria-selected="true">Raw bar</button>
+          <button role="tab" id="t2" aria-controls="c2" aria-selected="false" tabindex="-1">Quentes</button>
+        </div>
+        <div role="tabpanel" id="c1" aria-labelledby="t1">
+          <ul class="dishes">
+            <li><h3>Hand roll salmon gochujang</h3><p>Temaki aberto com barriga de salmão maçaricada e caramelo de pimenta gochujang.</p></li>
+            <li><h3>Ceviche cambodian</h3><p>Peixe branco, camarão e polvo com pera, pimenta, ervas frescas e folhas de arroz.</p></li>
+            <li><h3>Salmão trufado</h3><p>Lâminas de salmão com flor de sal, molho cítrico, brotos e salsa trufada.</p></li>
+            <li><h3>Tartar de atum</h3><p>Com limão-siciliano e ovas de tobiko, sobre crocantes de alga nori.</p></li>
+          </ul>
+        </div>
+        <div role="tabpanel" id="c2" aria-labelledby="t2" hidden>
+          <ul class="dishes">
+            <li><h3>Gyoza de Angus</h3><p>Grelhada, recheada de picanha de Angus com gengibre e cebolinha, ao ponzu aioli.</p></li>
+            <li><h3>Pipoca de camarão</h3><p>Camarões no tempurá com molho gochujang levemente picante.</p></li>
+            <li><h3>Camarão vietnamita</h3><p>Salteado com relish de sweet chili, limão-siciliano, amendoim e pepino.</p></li>
+            <li><h3>Tataki de carne</h3><p>Shoulder steak mal-passado com cogumelos rosa de Guaramiranga no ponzu aioli.</p></li>
+          </ul>
+        </div>
+        <div class="menu-cta">
+          <a class="btn" href="https://www.meufluux.com.br/visttarooftop/cardapio" target="_blank" rel="noopener">Cardápio completo e drinks</a>
+          <a class="btn btn-line" href="https://www.meufluux.com.br/visttarooftop/adega" target="_blank" rel="noopener">Carta de vinhos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencias" class="block">
+      <div class="wrap">
+        <h2 class="title">Experiências</h2>
+        <ul class="exp">
+          <li><h3>Música ao vivo</h3><p>Com a cidade iluminada ao fundo.</p></li>
+          <li><h3>Noites temáticas</h3><p>Open wine, Negroni Week, Black Carpet e outras datas na agenda da casa.</p></li>
+          <li><h3>Eventos e casamentos</h3><p>Locação do espaço para celebrações. <a href="https://wa.me/5585981780513" target="_blank" rel="noopener" style="color: var(--gold)">Fale com a equipe de eventos</a>.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="visite" class="block">
+      <div class="wrap visit">
+        <div>
+          <h2 class="title">Visite</h2>
+          <p class="address">Av. Santos Dumont, 6740<br>Merit Offices &amp; Mall, Cocó</p>
+          <p class="phone">Central de reservas: <a href="https://wa.me/5585985280261" target="_blank" rel="noopener">(85) 98528-0261</a></p>
+          <div class="actions">
+            <a class="btn" href="https://www.meufluux.com.br/visttarooftop/reservas" target="_blank" rel="noopener">Reservar</a>
+            <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&destination=Vistta+Rooftop%2C+Av.+Santos+Dumont%2C+6740%2C+Coc%C3%B3%2C+Fortaleza+-+CE" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+        <div>
+          <table class="hours"><caption>HORÁRIOS</caption><tbody id="hours-body"></tbody></table>
+          <p class="status" id="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="wrap"><div class="map"><iframe title="Mapa com a localização do Vistta Rooftop" src="https://www.google.com/maps?q=Vistta+Rooftop,+Av.+Santos+Dumont,+6740,+Coc%C3%B3,+Fortaleza+-+CE&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>Vistta Rooftop</span><span>Av. Santos Dumont, 6740, Cocó, Fortaleza</span></div></footer>
+  <script>
+    var HOURS = { 0: [[720, 1260]], 1: [[1020, 1440]], 2: [[1020, 1440]], 3: [[1020, 1440]], 4: [[1020, 1440]], 5: [[1020, 1500]], 6: [[1020, 1500]] };
+    var DAYS = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+  </script>
+  <script src="site.js"></script>
+</body>
+</html>
